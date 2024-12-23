@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fonte del Benessere</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #FAEBD7;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #FAEBD7; 
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        header {
+            background-color: #FAEBD7;
+            color: BLACK;
+            padding: 20px;
+            text-align: center;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #2c2c2e; /* Colore pieno per migliore contrasto */
+            border: 1px solid; /* mantiene lo spessore */
+            border-color: black; /* nuovo colore */
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+        section h2 {
+            margin-top: 0;
+            color: #FAEBD7;
+            text-align: center;   
+        }
+        .tariffe, .come-funziona {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #333; /* Colore pieno per migliore leggibilità */
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+        .tariffe ul li {
+            background-color: #333; /* Colore pieno per migliore leggibilità */
+        }
+        .contact {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c2c2e; /* Colore pieno per migliore contrasto */
+            border-radius: 10px;
+            border: 1px solid; /* mantiene lo spessore */
+            border-color: black; /* nuovo colore */
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+        .contact a {
+            color: #00FF7F;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        #cookie-popup {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1rem;
+            z-index: 1000;
+            display: none;
+        }
+        #cookie-popup button {
+            background: #00BFFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #cookie-popup button:hover {
+            background: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div id="cookie-popup">
+        Questo sito utilizza cookie per migliorare la tua esperienza. Acconsenti all'uso dei cookie?
+        <button onclick="acceptCookies()">Accetto</button>
+        <button onclick="declineCookies()">Rifiuto</button>
+    </div>
+
+    <header>
+        <h1 style="font-family: 'Georgia', serif; font-style: italic; font-size: 40px; color: #333;">La Fonte del Benessere</h1>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Massaggiatrice Sportiva a Domicilio</h2>
+            <p style="text-align: center;">Regala al tuo corpo il benessere che merita.<br>Offro massaggi personalizzati per soddisfare ogni tua esigenza.</p>
+        </section>
+
+        <section>
+            <h2>Massaggi Disponibili</h2>
+            <ul>
+                <li><strong style="color: #00BFFF;">SVEDESE:</strong> Rilassante e tonificante.</li>
+                <li><strong style="color: #00BFFF;">DECONTRATTURANTE:</strong> Perfetto per alleviare tensioni e dolori muscolari.</li>
+                <li><strong style="color: #00BFFF;">SPORTIVO:</strong> Migliora la performance e la ripresa dopo l'attività fisica.</li>
+                <li><strong style="color: #00BFFF;">TAPING KINESIOLOGICO:</strong> Supporta i muscoli e accelera la guarigione.</li>
+                <li><strong style="color: #00BFFF;">MAORI:</strong> Un rituale antico per corpo e spirito.</li>
+                <li><strong style="color: #00BFFF;">ANTICELLULITE:</strong> Combatte la cellulite e rimodella il corpo.</li>
+                <li><strong style="color: #00BFFF;">LINFODRENAGGIO VODDER:</strong> Stimola il sistema linfatico e favorisce l'eliminazione delle tossine.</li>
+            </ul>
+        </section>
+
+        <section class="tariffe">
+            <h2>Tariffe</h2>
+            <ul>
+                <li>40 minuti: 35€</li>
+                <li>60 minuti: 50€</li>
+                <li>90 minuti: 75€</li>
+            </ul>
+        </section>
+
+        <section class="come-funziona">
+            <h2>Come Funziona?</h2>
+            <p>Tutto ciò che serve è un piccolo spazio dove mettere il lettino e la tua voglia di rilassarti.</p>
+        </section>
+
+        <div class="contact">
+            <h2>Contatti</h2>
+            <p>Zona: ALTO GARDA & LEDRO</p>
+            <p><strong>Per prenotazioni o maggiori informazioni</strong></p>
+            <p>Cell.: <a href="tel:3451604215">3451604215</a></p>
+            <p>Email: <a href="mailto:efinika0@gmail.com">efinika0@gmail.com</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (!localStorage.getItem("cookiesAccepted")) {
+                document.getElementById("cookie-popup").style.display = "block";
+            }
+        });
+
+        function acceptCookies() {
+            localStorage.setItem("cookiesAccepted", "true");
+            document.getElementById("cookie-popup").style.display = "none";
+        }
+
+        function declineCookies() {
+            alert("Puoi continuare a navigare senza cookie.");
+            document.getElementById("cookie-popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
